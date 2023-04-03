@@ -11,14 +11,14 @@ public class UI {
       //  joueurController.afficheDetailJoueur();
 
 
-    // JoueurController joueurController = new JoueurController();
-   //  joueurController.creerJoueur();
+  //  JoueurController joueurController = new JoueurController();
+  //  joueurController.creerJoueur();
 
 
-       TournoiController tournoiController = new TournoiController();
-        tournoiController.afficheDetailsTournoi();
+     TournoiController tournoiController = new TournoiController();
+      //tournoiController.afficheDetailsTournoi();
 
-        //tournoiController.creerTournoi();
+        tournoiController.creerTournoi();
     }
 
 

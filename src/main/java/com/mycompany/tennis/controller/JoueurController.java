@@ -39,6 +39,8 @@ public class JoueurController {
 
         joueurService.createJoueur(joueur);
 
+        System.out.println("Joueur créer s'appelle "+joueur.getPrenom());
+
     }
 
 
