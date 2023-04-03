@@ -44,4 +44,24 @@ public class JoueurController {
     }
 
 
+    public void renommeJoueur(){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("L'identifiant du jouer à renommer ?");
+        Long id = sc.nextLong();
+        sc.nextLine();
+        System.out.println("Par quel nom voulez-vous le remplacer ?");
+
+       String nom = sc.nextLine();
+
+
+joueurService.renomme(id, nom);
+
+
+
+
+
+
+    }
+
 }
