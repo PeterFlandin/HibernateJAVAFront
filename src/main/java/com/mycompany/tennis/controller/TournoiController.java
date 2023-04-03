@@ -17,12 +17,12 @@ public class TournoiController {
 
         Scanner sc = new Scanner(System.in);
 
-      //  System.out.println("Ecrivé le numéro d'identification de l'epreuve  ?");
-      //  long id = sc.nextLong();
+      System.out.println("Ecrivé le numéro d'identification de l'epreuve  ?");
+        long id = sc.nextLong();
 
-      //  Tournoi tournoi = tournoiService.getTournoi(id);
+      Tournoi tournoi = tournoiService.getTournoi(id);
 
-       // System.out.println("le nom du tournoi est :" +tournoi.getNom());
+       System.out.println("le nom du tournoi est :");
 
     }
 
