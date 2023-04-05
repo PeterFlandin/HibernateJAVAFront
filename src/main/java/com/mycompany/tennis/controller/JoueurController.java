@@ -51,11 +51,8 @@ public class JoueurController {
         Long id = sc.nextLong();
         sc.nextLine();
         System.out.println("Par quel nom voulez-vous le remplacer ?");
-
-       String nom = sc.nextLine();
-
-
-joueurService.renomme(id, nom);
+        String nom = sc.nextLine();
+        joueurService.renomme(id, nom);
 
     }
 
