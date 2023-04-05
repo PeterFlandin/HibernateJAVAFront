@@ -57,11 +57,6 @@ public class JoueurController {
 
 joueurService.renomme(id, nom);
 
-
-
-
-
-
     }
 
 }
