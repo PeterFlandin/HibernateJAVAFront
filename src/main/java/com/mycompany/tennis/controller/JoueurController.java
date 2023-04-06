@@ -56,4 +56,15 @@ public class JoueurController {
 
     }
 
+
+    public  void  changementDeSexe (){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("L'identifiant du jouer qui change de sexe");
+        Long id =sc.nextLong();
+        sc.nextLine();
+        System.out.println("Par quel sexe voulez-vous le remplacer ?");
+        Character sexe = sc.nextLine().charAt(0);
+        joueurService.changeSexe(id, sexe);
+    }
+
 }
