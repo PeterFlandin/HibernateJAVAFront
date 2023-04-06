@@ -66,6 +66,12 @@ public class JoueurController {
         Character sexe = sc.nextLine().charAt(0);
         joueurService.changeSexe(id, sexe);
     }
-    
+
+    public void suprimeJouer(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("id du joueur à supprimer ?");
+        long id = sc.nextLong();
+        joueurService.deleteJoueur(id);
+    }
 
 }

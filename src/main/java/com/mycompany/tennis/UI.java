@@ -12,9 +12,9 @@ public class UI {
       //  joueurController.afficheDetailJoueur();
 
        // joueurController.renommeJoueur();
-joueurController.changementDeSexe();
+         //joueurController.changementDeSexe();
 
-
+         joueurController.suprimeJouer();
   //  JoueurController joueurController = new JoueurController();
 
   //  joueurController.creerJoueur();
