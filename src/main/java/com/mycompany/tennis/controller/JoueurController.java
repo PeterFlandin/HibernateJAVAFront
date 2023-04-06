@@ -66,4 +66,5 @@ public class JoueurController {
         Character sexe = sc.nextLine().charAt(0);
         joueurService.changeSexe(id, sexe);
     }
+    
 }
