@@ -7,25 +7,21 @@ public class UI {
 
     public static void main(String... args){
 
-        JoueurController joueurController = new JoueurController();
+       // JoueurController joueurController = new JoueurController();
 
-      //  joueurController.afficheDetailJoueur();
-
-       // joueurController.renommeJoueur();
-         //joueurController.changementDeSexe();
-
-         joueurController.suprimeJouer();
-  //  JoueurController joueurController = new JoueurController();
-
-  //  joueurController.creerJoueur();
+        //  joueurController.afficheDetailJoueur();
+        // joueurController.renommeJoueur();
+        //joueurController.changementDeSexe();
+        //  joueurController.suprimeJouer();
+        //  joueurController.creerJoueur();
 
       //  ---------------------------------------------------
 
-     //TournoiController tournoiController = new TournoiController();
+     TournoiController tournoiController = new TournoiController();
 
       //tournoiController.afficheDetailsTournoi();
-
       //  tournoiController.creerTournoi();
+        tournoiController.deleteTournoi();
     }
 
 

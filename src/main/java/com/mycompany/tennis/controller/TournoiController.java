@@ -43,5 +43,14 @@ public class TournoiController {
 
     }
 
+    public  void  deleteTournoi (){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Id du tournoi à supprimer ?");
+        long id = sc.nextLong();
+        tournoiService.deleteTournoiSelectionne(id);
+
+    }
+
 
 }
