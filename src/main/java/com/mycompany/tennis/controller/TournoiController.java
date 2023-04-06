@@ -29,7 +29,6 @@ public class TournoiController {
     public void creerTournoi() {
 
         Scanner sc = new Scanner(System.in);
-
         Tournoi tournoi=new Tournoi();
 
         System.out.println("Donnée un nom de tournoi ?");
