@@ -67,4 +67,6 @@ public class JoueurController {
         joueurService.changeSexe(id, sexe);
     }
 
+
+    
 }
