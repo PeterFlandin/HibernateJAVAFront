@@ -19,10 +19,9 @@ public class TournoiController {
 
       System.out.println("Ecrivé le numéro d'identification de l'epreuve  ?");
         long id = sc.nextLong();
-
        Tournoi tournoi = tournoiService.getTournoi(id);
 
-       System.out.println("le nom du tournoi est :");
+       System.out.println("le nom du tournoi est : " );
 
     }
 
