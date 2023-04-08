@@ -16,14 +16,24 @@ public class EpreuveController {
     }
 
 
-    public void afficheDetailEpreuve() {
+    public void afficheDerniereEpreuve() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Quel est l'id de l'epreuve ?");
         long identifiant = sc.nextLong();
 
-        Epreuve epreuve = epreuveService.getEpreuve(identifiant);
-        System.out.println("Le joueur s'appelle" + epreuve.getAnnee());
+        Epreuve epreuve = epreuveService.getEpreuveAvecTournoi(identifiant);
+        System.out.println( "Le nom du tournoi est "+epreuve.getTournoi().getNom());
+    }
+
+    public void afficheRollandGarros() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Quel est l'id de l'epreuve ?");
+        long identifiant = sc.nextLong();
+
+        Epreuve epreuve = epreuveService.getEpreuveSansTournoi(identifiant);
+        System.out.println("L'epreuve ce deroule en " + epreuve.getAnnee());
     }
 
 
