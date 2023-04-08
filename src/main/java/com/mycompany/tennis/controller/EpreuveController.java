@@ -1,5 +1,7 @@
 package com.mycompany.tennis.controller;
 
+import com.mycompany.tennis.basededonnee.dto.EpreuveFullDto;
+import com.mycompany.tennis.basededonnee.dto.EpreuveLiteDto;
 import com.mycompany.tennis.basededonnee.entity.Epreuve;
 import com.mycompany.tennis.basededonnee.entity.Joueur;
 import com.mycompany.tennis.basededonnee.repository.EpreuveRepository;
@@ -22,8 +24,7 @@ public class EpreuveController {
         System.out.println("Quel est l'id de l'epreuve ?");
         long identifiant = sc.nextLong();
 
-        Epreuve epreuve = epreuveService.getEpreuveAvecTournoi(identifiant);
-        System.out.println( "Le nom du tournoi est "+epreuve.getTournoi().getNom());
+        EpreuveFullDto epreuve = epreuveService.getEpreuveAvecTournoi(identifiant);
     }
 
     public void afficheRollandGarros() {
@@ -32,8 +33,8 @@ public class EpreuveController {
         System.out.println("Quel est l'id de l'epreuve ?");
         long identifiant = sc.nextLong();
 
-        Epreuve epreuve = epreuveService.getEpreuveSansTournoi(identifiant);
-        System.out.println("L'epreuve ce deroule en " + epreuve.getAnnee());
+        EpreuveLiteDto epreuve = epreuveService.getEpreuveSansTournoi(identifiant);
+        System.out.println("L'epreuve ce deroule en " +epreuve.getAnnee());
     }
 
 

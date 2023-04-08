@@ -34,7 +34,8 @@ public class UI {
         //------------------------------------------------------
 
         EpreuveController epreuveController = new EpreuveController();
-        epreuveController.afficheRollandGarros();
+        epreuveController.afficheDerniereEpreuve();
+
 
 
 
