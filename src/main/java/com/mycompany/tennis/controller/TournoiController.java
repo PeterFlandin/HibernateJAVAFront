@@ -1,5 +1,6 @@
 package com.mycompany.tennis.controller;
 
+import com.mycompany.tennis.basededonnee.dto.TournoiDto;
 import com.mycompany.tennis.basededonnee.entity.Tournoi;
 import com.mycompany.tennis.basededonnee.service.TournoiService;
 
@@ -19,7 +20,7 @@ public class TournoiController {
 
       System.out.println("Ecrivé le numéro d'identification de l'epreuve  ?");
         long id = sc.nextLong();
-       Tournoi tournoi = tournoiService.getTournoi(id);
+       TournoiDto tournoi = tournoiService.getTournoi(id);
 
        System.out.println("le nom du tournoi est : " );
 
@@ -28,7 +29,7 @@ public class TournoiController {
     public void creerTournoi() {
 
         Scanner sc = new Scanner(System.in);
-        Tournoi tournoi=new Tournoi();
+        TournoiDto tournoi=new TournoiDto();
 
         System.out.println("Donnée un nom de tournoi ?");
         tournoi.setNom(sc.nextLine());
