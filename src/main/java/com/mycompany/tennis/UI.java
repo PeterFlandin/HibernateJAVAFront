@@ -1,5 +1,6 @@
 package com.mycompany.tennis;
 
+import com.mycompany.tennis.controller.EpreuveController;
 import com.mycompany.tennis.controller.JoueurController;
 import com.mycompany.tennis.controller.ScoreController;
 import com.mycompany.tennis.controller.TournoiController;
@@ -16,18 +17,26 @@ public class UI {
         //  joueurController.suprimeJouer();
         //  joueurController.creerJoueur();
 
-      //  ---------------------------------------------------
 
-  //   TournoiController tournoiController = new TournoiController();
+        // ---------------------------------------------------
 
-     // tournoiController.afficheDetailsTournoi();
-      //  tournoiController.creerTournoi();
-      //  tournoiController.deleteTournoi();
+        //   TournoiController tournoiController = new TournoiController();
 
-   //---------------------------------------------------
+        // tournoiController.afficheDetailsTournoi();
+        //  tournoiController.creerTournoi();
+        //  tournoiController.deleteTournoi();
 
-        ScoreController scoreController = new ScoreController();
-        scoreController.afficheDetailScore();
+        //---------------------------------------------------
+
+        //   ScoreController scoreController = new ScoreController();
+        //  scoreController.afficheDetailScore();
+
+        //------------------------------------------------------
+
+        EpreuveController epreuveController = new EpreuveController();
+        epreuveController.afficheDetailEpreuve();
+
+
 
     }
 
