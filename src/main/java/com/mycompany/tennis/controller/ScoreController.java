@@ -1,5 +1,6 @@
 package com.mycompany.tennis.controller;
 
+import com.mycompany.tennis.basededonnee.dto.ScoreFullDto;
 import com.mycompany.tennis.basededonnee.entity.Joueur;
 import com.mycompany.tennis.basededonnee.entity.Score;
 import com.mycompany.tennis.basededonnee.service.ScoreService;
@@ -22,22 +23,24 @@ public class ScoreController {
         System.out.println("Quel est l'id du joueur que vous voulez affiche ?");
         long identifiant = sc.nextLong();
 
-        Score score = scoreService.getScore(identifiant);
-        System.out.println(score.getSet1());
-        System.out.println(score.getSet2());
+        ScoreFullDto scoreFullDto = scoreService.getScore(identifiant);
 
 
-if (score.getSet3()!=null) {
-    System.out.println(score.getSet3());
+
+if (scoreFullDto.getSet3()!=null) {
+    System.out.println(scoreFullDto.getSet3());
 }
-        if (score.getSet4()!=null) {
-            System.out.println(score.getSet4());
+        if (scoreFullDto.getSet4()!=null) {
+            System.out.println(scoreFullDto.getSet4());
         }
-        if (score.getSet5()!=null) {
-            System.out.println(score.getSet5());
+        if (scoreFullDto.getSet5()!=null) {
+            System.out.println(scoreFullDto.getSet5());
         }
+        System.out.println(scoreFullDto.getMatchDto().getEpreuveFullDto().getTournoi().getNom());
 
     }
+
+
 
 }
 

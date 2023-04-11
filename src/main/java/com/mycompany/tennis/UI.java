@@ -25,8 +25,9 @@ public class UI {
 
         //---------------------------------------------------
 
-        //   ScoreController scoreController = new ScoreController();
+           ScoreController scoreController = new ScoreController();
         //  scoreController.afficheDetailScore();
+scoreController.afficheDetailScore();
 
         //------------------------------------------------------
 
@@ -35,8 +36,8 @@ public class UI {
 
         //----------------------------------------------------------
 
-        MatchController matchController = new MatchController();
-        matchController.afficheDetailsMatch();
+      //  MatchController matchController = new MatchController();
+      //  matchController.afficheDetailsMatch();
 
 
     }
