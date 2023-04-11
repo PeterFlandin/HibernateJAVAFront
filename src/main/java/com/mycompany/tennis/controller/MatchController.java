@@ -22,7 +22,7 @@ public class MatchController {
       System.out.println("Ecrivé le numéro d'identification de l'epreuve  ?");
       long id = sc.nextLong();
       MatchDto matchDto = matchService.getMatch(id);
-
+      System.out.println(matchDto.getEpreuveFullDto().getAnnee());
       System.out.println("le nom du gagnat est : " + matchDto.getVainqueur().getNom() );
       System.out.println("le nom du finaliste est : " + matchDto.getFinaliste().getNom() );
 
