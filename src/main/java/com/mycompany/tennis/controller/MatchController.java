@@ -26,8 +26,17 @@ public class MatchController {
       System.out.println("le nom du gagnat est : " + matchDto.getVainqueur().getNom() );
       System.out.println("le nom du finaliste est : " + matchDto.getFinaliste().getNom() );
 
+      System.out.println(matchDto.getScoreFullDto().getSet1());
+      System.out.println(matchDto.getScoreFullDto().getSet2());
+
+      if (matchDto.getScoreFullDto().getSet3()!=null) {
+         System.out.println(matchDto.getScoreFullDto().getSet3());
+      }
+      if (matchDto.getScoreFullDto().getSet4()!=null) {
+         System.out.println(matchDto.getScoreFullDto().getSet4());
+      }
+      if (matchDto.getScoreFullDto().getSet5()!=null) {
+         System.out.println(matchDto.getScoreFullDto().getSet5());
+      }
    }
-
-
-
-}
+   }

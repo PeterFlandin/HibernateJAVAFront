@@ -31,14 +31,14 @@ public class UI {
 
         //------------------------------------------------------
 
-        EpreuveController epreuveController = new EpreuveController();
+     //   EpreuveController epreuveController = new EpreuveController();
         //epreuveController.afficheDerniereEpreuve();
-        epreuveController.afficheDetailEpreuce();
+      //  epreuveController.afficheDetailEpreuce();
 
         //----------------------------------------------------------
 
-      //  MatchController matchController = new MatchController();
-      //  matchController.afficheDetailsMatch();
+        MatchController matchController = new MatchController();
+       matchController.afficheDetailsMatch();
 
 
     }
