@@ -25,14 +25,15 @@ public class UI {
 
         //---------------------------------------------------
 
-           ScoreController scoreController = new ScoreController();
+          // ScoreController scoreController = new ScoreController();
         //  scoreController.afficheDetailScore();
-scoreController.afficheDetailScore();
+//scoreController.afficheDetailScore();
 
         //------------------------------------------------------
 
-       // EpreuveController epreuveController = new EpreuveController();
+        EpreuveController epreuveController = new EpreuveController();
         //epreuveController.afficheDerniereEpreuve();
+        epreuveController.afficheDetailEpreuce();
 
         //----------------------------------------------------------
 
