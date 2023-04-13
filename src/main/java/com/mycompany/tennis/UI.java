@@ -38,8 +38,8 @@ public class UI {
         //----------------------------------------------------------
 
         MatchController matchController = new MatchController();
-       matchController.afficheDetailsMatch();
-
+       //matchController.afficheDetailsMatch();
+        matchController.ajouterMatch();
 
     }
 
