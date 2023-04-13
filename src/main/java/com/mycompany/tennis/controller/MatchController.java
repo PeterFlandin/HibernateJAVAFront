@@ -39,4 +39,16 @@ public class MatchController {
          System.out.println(matchDto.getScoreFullDto().getSet5());
       }
    }
+
+   public void tapistapisVert(){
+
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("Ecrivé le numéro d'identification du match que vous voulez annuler  ?");
+      long id = sc.nextLong();
+      matchService.tapisVert(id);
+
+   }
+
+
    }
